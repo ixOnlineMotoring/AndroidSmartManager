@@ -20,7 +20,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.display.SimpleBitmapDisplayer;
 import com.nw.model.YouTubeVideo;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 
 import java.util.ArrayList;
 

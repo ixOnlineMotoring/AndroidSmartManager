@@ -9,7 +9,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 
 public class VolleySingleton
 {

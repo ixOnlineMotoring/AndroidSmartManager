@@ -43,7 +43,7 @@ import com.nw.widget.CustomDialogManager;
 import com.nw.widget.CustomTextView;
 import com.smartmanager.activity.PlayerActivity;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 import com.utils.Constants;
 import com.utils.Helper;
 import com.utils.HelperHttp;

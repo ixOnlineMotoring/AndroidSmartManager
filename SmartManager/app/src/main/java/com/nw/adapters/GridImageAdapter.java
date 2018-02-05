@@ -24,7 +24,7 @@ import com.nw.interfaces.DialogListener;
 import com.nw.model.BaseImage;
 import com.nw.widget.CustomDialogManager;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 import com.utils.Constants;
 
 import org.askerov.dynamicgrid.BaseDynamicGridAdapter;

@@ -25,7 +25,7 @@ import com.nw.widget.CustomDialogManager;
 import com.nw.widget.CustomEditText;
 import com.smartmanager.activity.PlayerActivity;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 
 public class VideoPreviewFragment extends BaseFragement implements OnClickListener
 {

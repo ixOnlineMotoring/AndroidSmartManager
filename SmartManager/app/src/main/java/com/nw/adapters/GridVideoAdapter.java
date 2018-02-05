@@ -18,7 +18,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.display.SimpleBitmapDisplayer;
 import com.nw.model.BaseImage;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 import com.utils.Constants;
 import com.utils.Helper;
 

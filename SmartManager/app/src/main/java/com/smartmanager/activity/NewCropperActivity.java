@@ -43,7 +43,7 @@ import com.nw.webservice.DataManager;
 import com.nw.widget.CustomDialogManager;
 import com.nw.widget.DragableGridView;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 import com.sonyericsson.util.AlbumStorageDirFactory;
 import com.sonyericsson.util.BaseAlbumDirFactory;
 import com.sonyericsson.util.FroyoAlbumDirFactory;

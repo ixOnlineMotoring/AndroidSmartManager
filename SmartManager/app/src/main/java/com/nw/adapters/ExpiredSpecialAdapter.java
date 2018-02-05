@@ -23,7 +23,7 @@ import com.nw.webservice.VolleySingleton;
 import com.nw.webservice.WebServiceTask;
 import com.nw.widget.CustomDialogManager;
 import com.smartmanager.android.R;
-import com.smartmanager.android.staging.SmartManagerApplication;
+import com.smartmanager.android.live.SmartManagerApplication;
 import com.utils.Constants;
 import com.utils.Helper;
 import com.utils.HelperHttp;

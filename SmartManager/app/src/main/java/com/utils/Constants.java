@@ -39,7 +39,7 @@ public class Constants
     public static final String VIDEO_WEBSERVICE = "http://uploadservice.ixstaging.co.za/api/Video";*/
 
     //live web service
-    /*public static final String WEBSERVICE_URL="http://p4.authentication.ix.co.za/Authenticate.svc";
+    public static final String WEBSERVICE_URL="http://p4.authentication.ix.co.za/Authenticate.svc";
     public static final String STOCK_WEBSERVICE_URL="http://stockservice.ix.co.za/StockService.svc?wsdl";
 	public static final String PLANNER_WEBSERVICE_URL="http://planner.ix.co.za/PlannerService.svc?wsdl";
 	public static final String BLOG_WEBSERVICE_URL="http://blog.ix.co.za/BlogService.svc?wsdl";
@@ -51,7 +51,7 @@ public class Constants
 	public static  String EBROCHURE_WEBSERVICE_URL="http://ebrochure.ix.co.za/electronicbrochuregeneratorservice.svc?wsdl";
 	public static String SPECIAL_WEBSERVICE_URL = "http://specialsservice.ix.co.za/SpecialsService.svc?singleWsdl";
 	public static final String TRADER_NAMESPACE="Http://TradeService.ix.co.z\na";
-	public static final String VIDEO_WEBSERVICE="http://uploadservice.ix.co.za/api/Video";*/
+	public static final String VIDEO_WEBSERVICE="http://uploadservice.ix.co.za/api/Video";
 
 
     // Always should point to live (Client requirement)
@@ -60,8 +60,9 @@ public class Constants
 
     //Added by Asmita
     //New Staging URLs
+    //Following are the Staging URL for the new qa Server
 
-    public static String WEBSERVICE_URL = "http://p4authentication.qa.ix.co.za/Authenticate.svc?wsdl";
+   /* public static String WEBSERVICE_URL = "http://p4authentication.qa.ix.co.za/Authenticate.svc?wsdl";
 
     public static String STOCK_WEBSERVICE_URL = "http://stock.qa.ix.co.za/StockService.svc?wsdl";
 
@@ -88,11 +89,11 @@ public class Constants
 
     public static String SPECIAL_WEBSERVICE_URL = "http://specialsservice.ixstaging.co.za/SpecialsService.svc?singleWsdl";
 
-    /*public static String TRADER_WEBSERVICE_URL = "http://tradeservice.ixstaging.co.za/TradeService.svc?wsdl";*/
+    *//*public static String TRADER_WEBSERVICE_URL = "http://tradeservice.ixstaging.co.za/TradeService.svc?wsdl";*//*
     //Added by Asmita on 01-02-2018
     public static String TRADER_WEBSERVICE_URL = "http://tradeservice.ix.co.za/TradeService.svc?wsdl";
 
     public static final String TRADER_NAMESPACE = "http://tradeservice.ix.co.za";
 
-    public static final String VIDEO_WEBSERVICE = "http://uploadservice.qa.ix.co.za/api/Video";
+    public static final String VIDEO_WEBSERVICE = "http://uploadservice.qa.ix.co.za/api/Video";*/
 }
