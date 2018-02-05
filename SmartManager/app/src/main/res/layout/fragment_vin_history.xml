@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.nw.widget.CustomTextView
+        android:id="@+id/tvVariantName"
+        style="@style/WhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="10.0" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:text="VIN" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVIN"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3.0"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="10.0" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:text="Engine" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvEngine"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3.0"
+            android:text="" />
+    </TableRow>
+
+    <com.nw.widget.CustomTextView
+        style="@style/WhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Previously sold by-"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/lvVinHistory"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.0" >
+    </ListView>
+
+</LinearLayout>

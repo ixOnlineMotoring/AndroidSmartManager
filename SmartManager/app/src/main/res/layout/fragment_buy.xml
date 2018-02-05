@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content" >
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvFilter"
+            style="@style/SingleLineWhiteTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/hidefilter" />
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@null"
+            android:src="@drawable/down_arrow_white" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureAllChildren="false"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/year" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" >
+
+                <com.nw.widget.CustomEditText
+                    android:id="@+id/minYear"
+                    style="@style/EditTextStyleDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ems="4"
+                    android:text="@string/defualt_date" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="@string/to"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <com.nw.widget.CustomEditText
+                    android:id="@+id/maxYear"
+                    style="@style/EditTextStyleDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ems="4" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/make" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edMake"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:hint="@string/select_make" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/models" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edModel"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:hint="@string/select_model" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/variant" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edVariant"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:hint="@string/select_varient" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:text="All" />
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbAll"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:text="Dealer Trade Vehicles" />
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbDealerTrade"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:text="Factory Demos" />
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbFactoryDemo"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlImage"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/custom_background_edittext"
+            android:overScrollMode="never"
+            android:visibility="gone" >
+
+            <org.askerov.dynamicgrid.DynamicGridView
+                android:id="@+id/gvImages"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                android:visibility="visible" >
+            </org.askerov.dynamicgrid.DynamicGridView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:text="Tenders" />
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbTendors"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:text="Private Vehicles" />
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbPrivateVehicle"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/bClear"
+                style="@style/GreyButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.0"
+                android:text="@string/clear" />
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/bSearch"
+                style="@style/BlueButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:text="@string/search" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TableRow
+            android:id="@+id/trSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical"
+                android:text="@string/sortby" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edSortBy"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/none" >
+
+                <requestFocus />
+            </com.nw.widget.CustomEditText>
+        </TableRow>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVehicleCount"
+            style="@style/SingleLineWhiteTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="5dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+        
+          <com.nw.widget.CustomTextView
+            android:id="@+id/tvFilterrecords"
+            style="@style/WhiteTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvBuy"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.0" >
+    </ListView>
+
+</LinearLayout>

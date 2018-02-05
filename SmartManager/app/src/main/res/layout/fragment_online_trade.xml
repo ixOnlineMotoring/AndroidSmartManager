@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llAdverts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Advert Region:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edtAdvertRegions"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="National" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvColumnName"
+                style="@style/WhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Now" />
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="90 Days" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white" />
+
+        <ListView
+            android:id="@+id/listview"
+            style="@style/ListViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#bcbcbc" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvNoteBottom"
+            style="@style/RedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:text="&apos;Now&apos; includes retail adverts active now plus the last 30 days. &apos;90 Days&apos; includes retail adverts active now plus the last 90 days." />
+    </LinearLayout>
+
+</LinearLayout>

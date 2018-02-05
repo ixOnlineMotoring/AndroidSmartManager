@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/llayoutPushNotification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvLeadNumber"
+                style="@style/BlueText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:maxLines="1"
+                android:text="Lead 32456"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewLable"
+                style="@style/RedText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="New"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvDate"
+                style="@style/WhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="1"
+                android:text="Wed21Jan2017 4:46PM"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvDetails"
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autoLink="phone"
+            android:text="Copy. Contact Jane on 8237648726 about 2016 Toyota FJ Cruiser 4.0 V6[11J0000] Source cars.co.za SP=RB"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColorLink="@color/dark_blue"/>
+    </LinearLayout>
+</LinearLayout>

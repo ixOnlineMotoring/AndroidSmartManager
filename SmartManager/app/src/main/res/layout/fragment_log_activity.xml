@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnCheckIn"
+            style="@style/GreyButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_in" />
+        <!-- </LinearLayout> -->
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:gravity="center_vertical"
+                android:text="@string/filter" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edtClientFilter"
+                style="@style/SingleLineEdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:inputType="textEmailAddress|textCapSentences" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:gravity="center_vertical"
+                android:text="@string/client_compulsary" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/tvClient"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="@string/select_Client_" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:gravity="center_vertical"
+                android:text="@string/type_" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/tvType"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="@string/type1" />
+        </TableRow>
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/details_" />
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edtDetails"
+            style="@style/MultilineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/person_seen_none" />
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/tvPersonType"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint=""
+            android:inputType="text|textCapSentences" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbInternal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_checkbox_create_blog"
+                android:drawablePadding="10dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/internal" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edtTimeSpent"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:hint="@string/time_spent"
+                android:inputType="textEmailAddress|textCapSentences" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbToday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/selector_checkbox_create_blog"
+                android:drawablePadding="10dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/today" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edtDate"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:hint="@string/select_date"
+                android:inputType="textEmailAddress|textCapSentences" />
+        </LinearLayout>
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/tvCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_background_edittext"
+            android:drawableRight="@drawable/register_arrow"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/check_in"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:visibility="gone" />
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnSave"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+        <!-- </LinearLayout> -->
+    </LinearLayout>
+
+</ScrollView>

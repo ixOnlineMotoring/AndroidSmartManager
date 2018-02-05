@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_background_edittext_search"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvClassId"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:paddingLeft="5dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@color/white" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvClassName"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.78" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:paddingLeft="5dp"
+                android:text="Restrictions" />
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.50"
+                android:text="Issued" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivClassImage"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:contentDescription="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/class_b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvClassRestrictions"
+                style="@style/SingleLineBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:paddingLeft="5dp" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvClassIssueDate"
+                style="@style/SingleLineBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.50" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

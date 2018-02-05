@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="user_details_action_bar">330dp</dimen>
+    <dimen name="action_bar_size">60dp</dimen>
+    <dimen name="navigation_drawer_width">540dp</dimen>
+    <dimen name="user_image_size">50dp</dimen>
+    <dimen name="ix_logo_dimen">40dp</dimen>
+    <dimen name="company_logo_dimen_home">85dp</dimen>
+    <dimen name="company_logo_dimen_login">120dp</dimen>
+    <dimen name="photos_extras_text_size">14sp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="swipe_list_height">80dp</dimen>
+    <dimen name="item_image_width">106dp</dimen>
+    <dimen name="item_image_height">80dp</dimen>
+    <dimen name="detail_image_width">136dp</dimen>
+ 	<dimen name="detail_image_height">120dp</dimen>
+ 	<dimen name="review_item_height">120dp</dimen>
+ 	
+ 	<dimen name="rim">30dp</dimen>
+
+</resources>

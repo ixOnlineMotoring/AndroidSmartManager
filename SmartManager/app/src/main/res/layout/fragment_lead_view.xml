@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvProspect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Prospect"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvProspectValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Phone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvPhoneValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:autoLink="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvEmailValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:autoLink="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvEnquired"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Enquired_on"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvEnquiredValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Timing"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvTimeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Source"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvSourceValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvDateValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvLastUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/Last_Update"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvLastUpdateValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:padding="2dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/vwUpdateNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/headerView"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/Update_Now"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_margin="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/llUpdateNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/Activity"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.nw.widget.CustomEditText
+                    android:id="@+id/edActivity"
+                    style="@style/EditTextStyleDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="4"
+                    android:text="@string/select" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSoldDelivered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.nw.widget.CustomTextViewLight
+                    style="@style/RedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="You must enter the below details to mark this lead as delivered" />
+
+                <com.nw.widget.CustomTextViewLight
+                    style="@style/BlueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Invoice Details"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Invoice #*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edInvoiceNo"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Date*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edDate"
+                        style="@style/CalendarEdittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:hint=" Select Date" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="R incl.*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edInclusive"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:inputType="number"
+                        android:maxLength="9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Invoice To*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edInvoiceTo"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Salesperson*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edSalesPerson"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4" />
+                </LinearLayout>
+
+                <com.nw.widget.CustomTextViewLight
+                    style="@style/BlueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Vehicle Details"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Stock #*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edStockCode"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Vehicle Dept.*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edVehicleDept"
+                        style="@style/EditTextStyleDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:text="Select" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Vehicle Type*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edVehicleType"
+                        style="@style/EditTextStyleDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:text="Cars" />
+                </LinearLayout>
+
+                <com.nw.widget.CustomTextViewLight
+                    style="@style/BlueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Customer Details"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Gender*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edGener"
+                        style="@style/EditTextStyleDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:text="Select" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Race*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edRaces"
+                        style="@style/EditTextStyleDropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:text="Select" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" >
+
+                    <com.nw.widget.CustomTextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Age*"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.nw.widget.CustomEditText
+                        android:id="@+id/edAge"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ems="4"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/change_status"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.nw.widget.CustomCheckBox
+                    android:id="@+id/cbChangeStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.4"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="30dp"
+                    android:drawableRight="@drawable/selector_checkbox_create_blog" />
+            </LinearLayout>
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Comment*"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edComment"
+                style="@style/MultilineEdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/bSubmit"
+                style="@style/BlueButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="@string/submit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTradeIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/Trade_in_details"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvCurrentVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/Current_Vehicle"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvCurrentVehicleValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/Year_Model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/Year_Model"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvYearModeValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvMilage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/Mileage"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvMilageValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

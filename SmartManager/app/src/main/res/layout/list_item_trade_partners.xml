@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvPartner"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+                  android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:text="Hoopers Volkswagen" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvTradeAccess"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Yes" />
+
+        <LinearLayout
+            android:id="@+id/llEdityYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginTop="4dp"
+            android:gravity="left|center_vertical" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTenderAccess"
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                 android:gravity="center_vertical|center_horizontal"
+                android:paddingRight="10dp"
+                android:text="Yes" />
+
+            <com.nw.widget.CustomTextView
+                style="@style/GreyTextStyleSmallText"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Edit" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

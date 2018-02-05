@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/detail_image_height"
+            android:layout_marginTop="5dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/ivItemBuyList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivBuyNowFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_buynow" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTitleItemBuyList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="1"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.0" >
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvDistanceItemBuyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvColorItemBuyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.0"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvLocationItemBuyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="" />
+
+                <View
+                    android:layout_marginTop="3dp"
+                    android:layout_width="1dp"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <LinearLayout
+                    android:id="@+id/llExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <com.nw.widget.CustomTextView
+                        style="@style/SingleLineRedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Exp. "
+                        android:textStyle="bold" />
+
+                    <com.nw.widget.CustomTextView
+                        android:id="@+id/tvTimeLeftItemBuyList"
+                        style="@style/SingleLineRedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvMyBidItemBuyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="" />
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvBidStatusItemBuyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </TableRow>
+        </LinearLayout>
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llBidprice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvTitleMinBids"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Bid : "
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvPriceItemBuyList"
+            style="@style/SingleLineYellowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

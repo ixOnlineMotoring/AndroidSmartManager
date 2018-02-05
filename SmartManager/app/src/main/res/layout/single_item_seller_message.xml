@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvUserName"
+            style="@style/SingleLineBlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gary Mackay"
+            android:textStyle="bold" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvUserMessage"
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="new message is coming"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <com.nw.widget.CustomTextView
+        android:id="@+id/tvUserDate"
+        style="@style/WhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="17 Sept 2015 at 18:33"
+        android:textSize="9dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

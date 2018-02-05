@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text=""
+                android:visibility="invisible" />
+
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Leads/Ranked" />
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Sales/Ranked" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@android:color/white" />
+
+
+        <com.nw.widget.StaticListView
+            android:id="@+id/lvDemand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvNoteleadpoll"
+            style="@style/RedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Leads include online enquiries as well as captured walk-ins and phone-ins. Sales are not necessarily as a result of these said enquiries.\nPeriod: 180 days (circa 6months)" />
+    </LinearLayout>
+
+</ScrollView>

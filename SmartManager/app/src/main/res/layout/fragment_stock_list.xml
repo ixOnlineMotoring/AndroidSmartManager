@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1.0"
+            android:drawableRight="@drawable/register_arrow"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/hidefilter"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/down_arrow_white"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:weightSum="1.0">
+
+        <com.nw.widget.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.7"
+            android:paddingTop="5dp"
+            android:text="@string/vehicles"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edSortByVehicles"
+            style="@style/EditTextStyleDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/none"/>
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llayout_make_model_variant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0">
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/make_compulsary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"/>
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edMake"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/select_make">
+            </com.nw.widget.CustomEditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1.0">
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/model_compulsary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"/>
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edModel"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/select_model"/>
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edKeywordStock"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/keyword_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textNoSuggestions|textCapSentences"/>
+
+        <TableRow
+            android:id="@+id/tablerow_sortby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="1.0">
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.7"
+                android:paddingTop="5dp"
+                android:text="@string/sortby"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"/>
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edSortByStock"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/none"/>
+        </TableRow>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnList"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/list"
+            android:visibility="visible"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvNoGroupTab"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/lvDividerColor"
+        />
+    <com.nw.widget.CustomTextViewLight
+        android:id="@+id/tvCustomiseBroucher"
+        style="@style/RedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="@string/customise_broucher"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/llProfilePhotoUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.3"
+            android:gravity="center">
+
+            <com.nw.widget.CircularImageView
+                android:id="@+id/ivUserProfilePhoto"
+                android:layout_width="@dimen/euser_image_size"
+                android:layout_height="@dimen/euser_image_size"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnProfilePhotoUpload"
+            style="@style/GreyButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:text="@string/replace_photo_profile"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvMyStock"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/lvGroupStock"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+
+    <ListView
+        android:id="@+id/lvVarientList"
+        style="@style/ListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

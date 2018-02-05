@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.meetme.android.horizontallistview.HorizontalListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/hlvCarImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_image_height"
+            app:dividerWidth="5dp">
+        </com.meetme.android.horizontallistview.HorizontalListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="3.0" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvStockNo"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvAge"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:text="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvName"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvRetail"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvType"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvPeriod"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvBidsRecieved"
+            style="@style/BlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/bids_received"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/lvBids"
+            style="@style/ListViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <com.nw.widget.CustomButton
+                    android:id="@+id/btnRejectedBid"
+                    style="@style/GreyButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.0"
+                    android:text="@string/reject_bid" />
+
+                <com.nw.widget.CustomButton
+                    android:id="@+id/btnAccept"
+                    style="@style/BlueButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1.0"
+                    android:text="@string/accept" />
+            </TableRow>
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/btnExtendedBid"
+                style="@style/GreyButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/extend_bidding" />
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/btnEditVehicle"
+                style="@style/GreyButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/edit_vehicle_details" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.nw.widget.CustomTextView
+        style="@style/WhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remind me when the following vehicle types reach trade-readiness:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Vehicles" />
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:paddingRight="5dp"
+            android:text="From day" />
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edRedimnessNewDay"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Used Retail" />
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right" />
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edRedimnessUsedRetailDay"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Used Demos" />
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right" />
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edRedimnessUsedDemoDay"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Used Trade" />
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right" />
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Factory Demos" />
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right" />
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="1" />
+    </LinearLayout>
+
+    <com.nw.widget.CustomTextView
+        style="@style/RedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: Insert 0 to exclude vehicle type." />
+
+    <com.nw.widget.CustomButton
+        android:id="@+id/btnSave"
+        style="@style/BlueButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/save" />
+
+</LinearLayout>

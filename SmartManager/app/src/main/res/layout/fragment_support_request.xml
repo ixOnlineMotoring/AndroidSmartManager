@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/support_table_height"
+            android:layout_marginTop="5dp">
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.8"
+                android:gravity="center|left"
+                android:paddingRight="5dp"
+                android:text="@string/request_type"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"/>
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/etSelectTeam"
+                style="@style/EditTextStyleDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.3"
+                android:hint="@string/select_team"/>
+        </TableRow>
+
+        <com.nw.widget.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:text="@string/request_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edTitle"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:hint=""
+            />
+
+        <com.nw.widget.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|left"
+            android:text="@string/request_details"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edDescription"
+            style="@style/CustomMultilineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint=""/>
+        <!--Make visiblity of Add Images text gone temporary-->
+        <!--Added by Asmita on 24/01/2018-->
+
+        <com.nw.widget.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:text="@string/attach_images"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlGridImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_background_edittext"
+            android:overScrollMode="never"
+            android:visibility="visible">
+
+            <org.askerov.dynamicgrid.DynamicGridView
+                android:id="@+id/gvImages"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                android:visibility="visible">
+            </org.askerov.dynamicgrid.DynamicGridView>
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/gvImages"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:gravity="bottom"
+                android:text="@string/attachment_list"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flAddFiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.nw.widget.CustomEditText
+                style="@style/SingleLineEdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:enabled="false"
+                android:inputType="textEmailAddress"/>
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:contentDescription="@null"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plus2_icon"/>
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/attachment_list"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                />
+
+        </FrameLayout>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnSendEmailList"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/submit"
+            />
+
+    </LinearLayout>
+</ScrollView>

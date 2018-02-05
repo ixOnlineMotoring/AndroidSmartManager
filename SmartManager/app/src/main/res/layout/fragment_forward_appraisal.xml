@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flImage"
+                android:layout_width="@dimen/detail_image_width"
+                android:layout_height="@dimen/review_item_height"
+                android:layout_marginTop="5dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVehicleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llCarName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.nw.widget.CustomTextView
+                        android:id="@+id/tvTitleCarName"
+                        style="@style/BlueText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Volkswagen Polo Hatch"/>
+                </LinearLayout>
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvCardetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1396cc, 76Kw, 210Nm, Petrol, Manual, Hatch. Avail as new from Jan 2010 to Dec 2014"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvAppraisalDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Date: Mon 12 Dec 2015"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvAppraiser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Appraiser: Dave Johnson"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/email_pdf_to"/>
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edemailids"
+                style="@style/Seller_page_Edtext_view"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:inputType="textEmailAddress"
+                />
+
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvNoVariantArticles"
+            style="@style/RedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/separate_multiples_with_commas"
+            />
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnSend"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/send"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvbuyersSummeryClientName"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="Hooper Volkswagen" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvbuyersSummerySalesCount"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</LinearLayout>

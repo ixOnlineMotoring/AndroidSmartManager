@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.nw.widget.CustomTextView
+        android:id="@+id/tvBack"
+        style="@style/SingleLineWhiteTextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/left_arrow"
+        android:drawableLeft="@drawable/left_arrow"
+        android:gravity="center_vertical"
+        android:text="Back" />
+
+    <com.nw.widget.CustomTextView
+        android:id="@+id/tvScreenTitle"
+        style="@style/SingleLineWhiteTextMedium"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="eBrochurea" />
+
+</RelativeLayout>

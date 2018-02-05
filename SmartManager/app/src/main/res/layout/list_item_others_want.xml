@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvsalesYear"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="2015"
+            android:textStyle="bold" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvsalesfriendlyName"
+            style="@style/SingleLineBlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:maxLines="2"
+            android:text="Toyota Yaris 1.4i" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        android:weightSum="3.0" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Free State" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvsalesColour"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:text="Hoopers, Jack Nimble" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="2.0" >
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btMessage"
+            style="@style/GreyButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Message(4)" />
+    </TableRow>
+
+    <com.nw.widget.StaticListView
+        android:id="@+id/lvMessage"
+        style="@style/ListWithoutSeparatorStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.nw.widget.StaticListView>
+
+</LinearLayout>

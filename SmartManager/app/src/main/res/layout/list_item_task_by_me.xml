@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TableRow
+        android:id="@+id/trExpandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:layout_weight="10"
+        android:paddingTop="7dp" >
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+           >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvTaskId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:background="#ffffff" />
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                 android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvClientName"
+                    style="@style/SingleLineBlueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" />
+
+                <com.nw.widget.CustomTextViewLight
+                    android:id="@+id/tvTaskTitle"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_right" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llExpandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:singleLine="true" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvReadMore"
+                style="@style/SingleLineBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Read More"
+                android:visibility="gone" />
+        </TableRow>
+
+        <RelativeLayout
+            android:id="@+id/rlImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_image_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_background_edittext"
+            android:overScrollMode="never"
+            android:visibility="visible" >
+
+            <GridView
+                android:id="@+id/gvImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:verticalSpacing="2dp" >
+            </GridView>
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                style="@style/SingleLineBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No Images Available"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Author :"
+                android:textColor="@color/dark_blue" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <com.nw.widget.CustomTextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Assignee :"
+                android:textColor="@color/dark_blue" />
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvAssignee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/btnReject"
+                style="@style/GreyButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/reject" />
+
+            <com.nw.widget.CustomButton
+                android:id="@+id/btnAccept"
+                style="@style/BlueButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/accept_close" />
+        </TableRow>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnCancelTask"
+            style="@style/GreyButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Cancel Task"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

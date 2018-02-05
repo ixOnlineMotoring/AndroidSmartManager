@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvName"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:text="Hooper" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvUS"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvCountFirst"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvCountSecond"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvCountThird"
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

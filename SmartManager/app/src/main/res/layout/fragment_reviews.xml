@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvVehicleName"
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Releases, Reviews and Road Tests" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#bcbcbc" />
+
+        <com.nw.widget.StaticListView
+            android:id="@+id/lvVariantReview"
+            style="@style/ListViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvNoVariantArticles"
+            style="@style/RedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There are no model specific articles linked to this vehicle. Please see other articles below."
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llModelReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#bcbcbc"
+                android:visibility="gone" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvOtherLine"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="#bcbcbc" />
+        </LinearLayout>
+
+        <com.nw.widget.StaticListView
+            android:id="@+id/lvModelReview"
+            style="@style/ListViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvNoModelArticles"
+            style="@style/RedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There are no other articles available."
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flImage"
+                android:layout_width="@dimen/detail_image_width"
+                android:layout_height="@dimen/review_item_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ivVehicleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llCarName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.nw.widget.CustomTextView
+                        android:id="@+id/tvTitleCarName"
+                        style="@style/BlueText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Volkswagen Polo Hatch"/>
+                </LinearLayout>
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvCardetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="1396cc, 76Kw, 210Nm, Petrol, Manual, Hatch. Avail as new from Jan 2010 to Dec 2014"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvAppraisalDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Date: Mon 12 Dec 2015"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvAppraiser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Appraiser: Dave Johnson"/>
+
+        <RelativeLayout
+            android:id="@+id/rlSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Seller"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvSellerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/ivSeller"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPurchaseDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Purchase Details"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvPurchaseDetailsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivPurchaseDetails"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Condition"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvConditionStatus"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivCondition"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlVehicleExtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Vehicle Extras"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvVehicleExtrasStatus"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/iVehicleExtras"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlInterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Interior \nReconditioning"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvInteriorStatus"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivInterior"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlEngine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Engine &amp; \nDrivetrain"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvEngineStatus"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivEngine"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlExterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Exterior \nReconditioning"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvExteriorStatus"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivExterior"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlValuation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Valuation"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvValuationStatus"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivValuation"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSendOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Send Offer"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivSendOffer"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlForwardAppraisal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_dark_gray"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Forward Appraisal"
+                android:textAppearance="?android:attr/textAppearance"/>
+
+            <ImageView
+                android:id="@+id/ivForwardAppraisal"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

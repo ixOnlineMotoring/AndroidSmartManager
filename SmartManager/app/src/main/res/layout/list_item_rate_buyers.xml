@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteTextMedium"
+            android:id="@+id/tvRateBuyers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6.5"
+            android:text="Doesn&apos;t try renegotiatekjh ksdjfhgkjhfd kjhkjdhfkgkjhh" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/tvInputRateBuyers"
+                style="@style/EditTextStyleblack"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="number"
+                 />
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:text="/12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

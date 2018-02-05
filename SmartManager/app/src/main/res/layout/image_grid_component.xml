@@ -1,0 +1,36 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_background_edittext"
+        android:overScrollMode="never"
+        android:visibility="visible">
+
+        <org.askerov.dynamicgrid.DynamicGridView
+            android:id="@+id/gvImages"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:visibility="visible">
+
+        </org.askerov.dynamicgrid.DynamicGridView>
+
+        <com.nw.widget.CustomTextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/gvImages"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            android:gravity="bottom"
+            android:text="@string/photos_in_order_hold_to_move"/>
+    </RelativeLayout>
+
+</merge>

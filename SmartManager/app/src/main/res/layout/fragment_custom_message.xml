@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.nw.widget.CustomTextView
+        style="@style/SingleLineWhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Purchases:"
+        android:textStyle="bold" />
+
+    <com.nw.widget.CustomEditText
+        android:id="@+id/edPurchasesMessage"
+        style="@style/MultilineEdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=""
+        android:lines="2" />
+
+    <com.nw.widget.CustomTextView
+        style="@style/SingleLineWhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Make an Offer:"
+        android:textStyle="bold" />
+
+    <com.nw.widget.CustomEditText
+        android:id="@+id/edMakeAnOfferMessage"
+        style="@style/MultilineEdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=""
+        android:lines="2" />
+
+    <com.nw.widget.CustomTextView
+        style="@style/SingleLineWhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Secret Tender:"
+        android:textStyle="bold" />
+
+    <com.nw.widget.CustomEditText
+        android:id="@+id/edSecretTenderMessage"
+        style="@style/MultilineEdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=""
+        android:lines="2" />
+
+    <com.nw.widget.CustomButton
+        android:id="@+id/btnSave"
+        style="@style/BlueButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/save" />
+
+</LinearLayout>

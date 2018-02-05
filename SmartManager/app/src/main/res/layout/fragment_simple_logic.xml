@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVehicleName"
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2010 Audi A3 3.0 TDI" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Age in years" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvAgeforVehicle"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mileage in Km" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvMileageInKm"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/WhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Current year model treated as a 1 year old"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Latest new price in year registered" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvLatestPrice"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:text="Less: 10% pa" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvAgeDeprication"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Less: 5% for every 10 000km over \n22500km pa" />
+
+        <com.nw.widget.CustomTextViewLight
+              android:id="@+id/tvMileageAdjustmentLess"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text="    -    " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/WhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Add: 5% for every 10 000km over \n22500km pa" />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvMileageAdjustmentAdd"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:text="    -    " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.7"
+            android:text="Suggested Retail" />
+
+        <LinearLayout
+            android:id="@+id/llRetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvSuggestedRetails"
+                style="@style/WhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/WhiteTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.7"
+            android:text="Suggested Trade" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <com.nw.widget.CustomTextView
+                 android:id="@+id/tvSuggestedTrade"
+                style="@style/WhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.nw.widget.CustomTextViewLight
+        style="@style/RedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="This formula should be used in conjunction with a bona fide valuation and real-time advertised pricing values. This formula does not take demand, security or extras fitted into account." />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <com.nw.widget.CustomTextView
+        android:id="@+id/tvprivateofferVehicleName"
+        style="@style/BlueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="VehicleName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Seller: " />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvprivateseller"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fred Basset" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+         >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvlocation"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register number" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvColor"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvStock"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="stock" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="2.0" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:text="Asking "
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvAskingbidPrice"
+                style="@style/SingleLineYellowText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R250000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offered "
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvOffered"
+                style="@style/SingleLinePurpleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="R2000000" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvdatetime"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dave Johnson at 12:13 on 12 Dec 2014 " />
+
+        
+    </TableRow>
+
+</LinearLayout>

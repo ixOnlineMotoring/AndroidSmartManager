@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/llayoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVehicleName"
+            style="@style/BlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="VehicleName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+             >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvRegNumber"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="#ffffff" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvColor"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="match_parent"
+                 android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:text="" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                 android:visibility="gone"
+                android:background="#ffffff" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvStockcode"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="match_parent"
+                 android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+           >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvtype"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                 android:visibility="gone"
+                android:background="#ffffff" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvMileage"
+                style="@style/SingleLineWhiteText"
+                android:layout_width="match_parent"
+                 android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:text="" />
+
+            <View
+                android:id="@+id/viewdate"
+                android:layout_width="1dp"
+                 android:visibility="gone"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvRemainingDays"
+                style="@style/SingleLineBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:layout_weight="1.0"
+                android:text="" />
+        </RelativeLayout>
+
+        <TableRow
+            android:id="@+id/tablerowwinningbids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvtitleMessage"
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winning Bid "
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvWinningbidPrice"
+                    style="@style/SingleLineYellowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.nw.widget.CustomTextView
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="My Bid "
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvMybids"
+                    style="@style/SingleLinePurpleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvbidestatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablerowsoldsection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.nw.widget.CustomTextView
+                    style="@style/SingleLineWhiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="Sold to me for " />
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvsoldprice"
+                    style="@style/SingleLinePurpleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal" >
+
+                <com.nw.widget.CustomTextView
+                    android:id="@+id/tvsoldstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Won" />
+            </LinearLayout>
+        </TableRow>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tablerowsellersection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="2dp" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller: " />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvsellerName"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <View
+            android:id="@+id/view_seller"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvsellerPhno"
+            style="@style/SingleLineBlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+    </TableRow>
+
+</LinearLayout>

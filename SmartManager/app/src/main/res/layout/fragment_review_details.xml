@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVehicleName"
+            style="@style/WhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" >
+        </View>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvTitle"
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvRoadTest"
+            style="@style/GrayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <com.meetme.android.horizontallistview.HorizontalListView
+            android:id="@+id/hlvCarImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_image_height"
+            android:visibility="visible"
+            app:dividerWidth="5dp" />
+
+        <WebView
+            android:id="@+id/wvVehicleReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hardwareAccelerated="true" 
+            android:layout_weight="1" />
+
+        <!--
+        <com.nw.widget.ZoomView
+            android:id="@+id/zoomView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvVehicleReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.nw.widget.ZoomView>
+        -->
+    </LinearLayout>
+
+</ScrollView>

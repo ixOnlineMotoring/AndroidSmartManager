@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/llyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvYear"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVehicleName"
+            style="@style/BlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:maxLines="2"
+            android:text="VehicleName"/>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvRegNumber"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register number"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="gone"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvColor"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Color"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="gone"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvStock"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="stock"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvDepartment"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Used"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="gone"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvMileage"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Mileage"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/viewRemainingDays"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:visibility="gone"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvRemainingDays"
+            style="@style/SingleLineBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Remaining days"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:id="@+id/llPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ret. "
+                android:textSize="9dp"
+                android:textStyle="bold"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvRetailPrice"
+                style="@style/SingleLineGreenText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/llTrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Trd. "
+                android:textSize="9sp"
+                android:textStyle="bold"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTradePrice"
+                style="@style/SingleLineYellowText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mileage"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineYellowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvExtras"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extras"
+            android:textSize="@dimen/photos_extras_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvComments"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textSize="@dimen/photos_extras_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvPhotos"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos"
+            android:textSize="@dimen/photos_extras_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"/>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVideos"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Videos"
+            android:textSize="@dimen/photos_extras_text_size"/>
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llTradePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llayoutAleart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.38"
+                android:gravity="center_vertical"
+                android:text="Active?*"/>
+
+            <CheckBox
+                android:id="@+id/cbIsTrade"
+                style="@style/CheckboxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.62"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.nw.widget.CustomTextView
+                style="@style/SingleLineWhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:text="Trade Price*"/>
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="R"/>
+
+            <com.nw.widget.CustomEditText
+                android:id="@+id/edTradePrice"
+                style="@style/SingleLineEdittextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.75"
+                android:inputType="numberDecimal"
+                android:maxLength="12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnEdit"
+            style="@style/GreyButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:text="Edit"/>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnActiveTrade"
+            style="@style/BlueButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:text="Activate Trade*"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</LinearLayout>

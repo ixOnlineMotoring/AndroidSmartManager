@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineRedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="At cost"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <com.nw.widget.StaticListView
+            android:id="@+id/listview"
+            style="@style/ListViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/llTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <com.nw.widget.CustomTextViewLight
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Total"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tv_total_value"
+                style="@style/SingleLineWhiteTextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.0"
+                android:gravity="left"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivAddExtra"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plus2_icon"/>
+
+        <com.nw.widget.CustomTextViewLight
+            style="@style/SingleLineWhiteTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/comments_only"/>
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/edtComments"
+            style="@style/MultilineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnSave"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.0"
+            android:text="@string/save"/>
+    </LinearLayout>
+
+</ScrollView>

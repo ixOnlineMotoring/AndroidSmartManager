@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+         >
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tv_title_exterior"
+            android:layout_width="0dp"
+            style="@style/SingleLineWhiteText"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Rim, RF - Repair" />
+
+        <com.nw.widget.CustomCheckBox
+            android:id="@+id/chk_title_price_exterior"
+            style="@style/CheckboxStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawablePadding="5dp"
+            android:text=" R350" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:src="@drawable/icn_close" />
+    </LinearLayout>
+
+</LinearLayout>

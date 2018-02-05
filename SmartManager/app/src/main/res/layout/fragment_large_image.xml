@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.nw.widget.ExtendedViewPager
+        android:id="@+id/evpImages"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/trFooterButtons"
+        android:layout_height="match_parent" />
+
+    <TableRow
+        android:id="@+id/trFooterButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/bar_color" >
+
+        <ImageButton
+            android:id="@+id/ibPrev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#00000000"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:src="@drawable/gallery_prev" />
+
+        <ImageButton
+            android:id="@+id/ibNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#00000000"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:src="@drawable/gallery_next" />
+    </TableRow>
+
+    <GridView
+        android:id="@+id/gvImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:verticalSpacing="3dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

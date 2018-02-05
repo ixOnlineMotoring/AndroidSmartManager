@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/svStockSummaryParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTest"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="visible"
+            />
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvVehicleName"
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/llLastStockParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:paddingTop="5dp"
+                android:text="@string/last_stock_import"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvLastStockImport"
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLastManualUpdateParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:paddingTop="5dp"
+                android:text="@string/last_manual_update"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextViewLight
+                android:id="@+id/tvManualUpdate"
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llUsedVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/used"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/vehicle"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/pics"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-5dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/vid"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/manual"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llActiveUsedVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/active"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedActiveVeh"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedActivePics"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedActiveVideos"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedActiveMan"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llExcludedUsedVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/excluded"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedExcludedVeh"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedExcludedPics"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedExcludedVideos"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedExcludedMan"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInvalidUsedVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/invalid"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedInvalidVeh"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedInvalidPics"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedInvalidVideos"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedInvalidMan"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llUsedTotalParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/invalid"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedVehTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedPicsTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedVideosTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvUsedManTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLine"
+            />
+
+        <LinearLayout
+            android:id="@+id/llNewVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="New"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/vehicle"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/pics"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-5dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/vid"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomBlueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/manual"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llActiveNewVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/active"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewActiveVeh"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewActivePics"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewActiveVideos"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewActiveMan"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llExcludedNewVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/excluded"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewExcludedVeh"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewExcludedPics"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewExcludedVideos"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewExcludedMan"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInvalidNewVehicleParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/invalid"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewInvalidVeh"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewInvalidPics"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewInvalidVideos"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewInvalidMan"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llNewTotalParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/invalid"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewVehTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewPicsTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewVideosTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNewManTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLine"
+            />
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_width="@dimen/view_total_width"
+            android:layout_marginTop="25dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llNetTotalParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/total"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvNetTotal"
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible"/>
+
+            <com.nw.widget.CustomTextView
+                style="@style/CustomWhiteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="14"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_width="@dimen/view_total_width"
+            />
+
+
+        <com.nw.widget.CustomTextViewLight
+            android:id="@+id/tvIgnoreStockImport"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/ignore_stock_import"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/red_light"
+            />
+
+
+        <com.nw.widget.CustomTextView
+            style="@style/CustomBlueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/active_stock_feed"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+        <com.nw.widget.StaticListView
+            android:id="@+id/lvActiveStockFeeds"
+            style="@style/ListWithoutSeparatorStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.nw.widget.StaticListView>
+
+
+        <com.nw.widget.CustomTextView
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/email_these_stock_lists"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <com.nw.widget.CustomTextView
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/used_vehicles"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/excluded"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbUsedExcluded"
+                style="@style/CheckboxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/invalid"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbUsedInvalid"
+                style="@style/CheckboxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/new_vehicles"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/excluded"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbNewExcluded"
+                style="@style/CheckboxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            >
+
+            <com.nw.widget.CustomTextView
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/invalid"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <com.nw.widget.CustomCheckBox
+                android:id="@+id/cbNewInvalid"
+                style="@style/CheckboxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                />
+
+
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tocaps"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <com.nw.widget.CustomTextView
+            style="@style/WhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/emailaddress"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <com.nw.widget.CustomEditText
+            android:id="@+id/etEmailList"
+            style="@style/SingleLineEdittextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"/>
+
+        <com.nw.widget.CustomButton
+            android:id="@+id/btnSendEmailList"
+            style="@style/BlueButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="@string/sendemail"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

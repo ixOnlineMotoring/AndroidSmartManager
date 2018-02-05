@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <LinearLayout
+        android:id="@+id/llyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvYear"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVehicleName"
+            style="@style/BlueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginLeft="5dp"
+            android:text="VehicleName" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="3.0" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvRegNumber"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Register number" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvColor"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Color" />
+
+        <View
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvStock"
+            style="@style/SingleLineWhiteText"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="stock" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="3.0" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvDepartment"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Used" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvMileage"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Mileage" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+             android:visibility="gone"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvRemainingDays"
+            style="@style/SingleLineBlueText"
+             android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Remaining days" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:weightSum="3.0" >
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ret. "
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvRetailPrice"
+            style="@style/SingleLineGreenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/tvLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineWhiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Trd. "
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvTradePrice"
+            style="@style/SingleLineYellowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Mileage" />
+
+        <com.nw.widget.CustomTextView
+            style="@style/SingleLineYellowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tablerow_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:weightSum="4.0" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvExtras"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Extras"
+            android:textSize="@dimen/photos_extras_text_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvComments"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Comments"
+            android:textSize="@dimen/photos_extras_text_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvPhotos"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Photos"
+            android:textSize="@dimen/photos_extras_text_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvVideos"
+            style="@style/SingleLineWhiteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:text="Videos"
+            android:textSize="@dimen/photos_extras_text_size" />
+    </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_delete"
+        app:showAsAction="always"
+        android:title="@string/delete"/>
+    <item
+        android:id="@+id/action_rotate"
+        app:showAsAction="always"
+        android:title="@string/rotate"/>
+    <item
+        android:id="@+id/action_crop"
+        app:showAsAction="always"
+        android:title="@string/crop"/>
+    <item
+        android:id="@+id/action_done"
+        app:showAsAction="always"
+        android:actionMenuTextColor = "#FFFF00"
+        android:title="@string/done"/>
+
+</menu>

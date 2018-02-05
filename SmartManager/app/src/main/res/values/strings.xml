@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Manager</string>
+    <string name="smart_manager">Smart Manager</string>
+    <string name="onesignal_app_id">06a1817b-6dad-4d2a-9e0d-98d5ba2e2055</string>
+    <!--  <string name="onesignal_app_id">531ecae6-6730-4907-ba12-f9926be47358</string> -->
+    <string name="onesignal_projectid">790494337781</string>
+    <string name="action_settings">Settings</string>
+    <string name="comments_colan">Comments:</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Smart\nManager</string>
+    <string name="home">Home</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="no_internet_connection">Please check your internet connection or try again later.</string>
+    <string name="error_getting_data">Error while getting data please try later.</string>
+    <string name="error_sendiing_data">Error while sending brochure please try later.</string>
+    <string name="error_while_saving_condition_data">Error while save conditions.</string>
+    <string name="error_while_saving_seller_data">Error while saving seller.</string>
+    <string name="error_while_saving_Incondition_data">Error while saving InteriorReconditions</string>
+    <string name="error_while_saving_VehicleExtras">Error while saving VehicleExtras</string>
+    <string name="error_while_saving_purchase_details_data">Error while save purchase details</string>
+    <string name="error_occured_try_later">Error occurred.Try after some time</string>
+    <string name="pleasewait">Please wait&#8230;</string>
+    <string name="loading">Please wait&#8230;</string>
+    <string name="load_more">More</string>
+    <string name="loading_">Loading&#8230;</string>
+    <string name="more">More</string>
+    <string name="email">Email:</string>
+    <string name="phone">Phone:</string>
+    <string name="invalid_username_password_please_contact">Your username and or password is invalid. \n\n Please contact:</string>
+    <!-- Loading&#8230; -->
+    <string name="no_connection">No connection</string>
+    <string name="no_data">No data</string>
+    <string name="no_item_to_select">No item to select</string>
+    <string name="network_error">Network error</string>
+    <string name="no_record_found">No record(s) found.</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+
+
+    <!-- activity blog -->
+    <string name="blog">Blog</string>
+    <string name="new_post">New Post</string>
+    <string name="new_post_plus">+ New Post</string>
+    <string name="search">Search</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="activ_post">Active Posts</string>
+    <string name="inactive_post">Inactive Posts</string>
+    <string name="no_post_found">No posts found</string>
+    <string name="end">End</string>
+    <string name="edit">Edit</string>
+    <string name="swipe_to_view">&lt; Swipe to view more &gt;</string>
+    <string name="type">Type:</string>
+    <string name="images">Images:</string>
+    <string name="days_remainig">Time Remaining:</string>
+    <string name="Active">Active:</string>
+    <string name="active_">Make active</string>
+    <string name="Created">Created:</string>
+    <string name="blog_ended_successfully">Blog ended successfully</string>
+    <string name="failed_to_end_blog">Failed to end blog, please try later</string>
+
+    <!-- create blog -->
+    <string name="create_blog">Create Blog</string>
+    <string name="edit_blog">Edit Blog</string>
+    <string name="select_blog_post_type">Select blog post type</string>
+    <string name="title">Title*</string>
+    <string name="details">Details</string>
+    <string name="author">Author (Optional)</string>
+    <string name="active_star">Active*</string>
+    <string name="ends_never">Ends Never</string>
+    <string name="mandatory">*Indicates mandatory fields</string>
+    <string name="preview">Preview</string>
+    <string name="save">Save</string>
+    <string name="blog_post_type">Post Type*</string>
+    <string name="save_and_close">Save &amp; Close</string>
+
+    <!-- preview blog -->
+    <string name="preview_blog">Preview Blog</string>
+
+    <!-- Customer Delivery -->
+    <string name="customer_delivery">Customer Delivery</string>
+    <string name="delivery">Delivery</string>
+
+    <!-- LogActivity -->
+    <string name="log_activity">Log Activity</string>
+    <string name="client_filter">Client Filter</string>
+    <string name="select_Client">Select Client</string>
+    <string name="type_">Type*</string>
+    <string name="details_">Details*</string>
+    <string name="person_seen_none">Person Seen / None</string>
+    <string name="time_spent">Time Spent</string>
+    <string name="select_date">Select Date</string>
+    <string name="internal">Internal</string>
+    <string name="today">Today</string>
+    <string name="check_in">Check In</string>
+    <string name="or">OR</string>
+    <string name="address">address</string>
+    <string name="location_service_disable_message">Your location service seems to be disabled, do you want to enable it?</string>
+    <string name="location_not_found">Location not found</string>
+    <string name="please_select_client">Please select client</string>
+    <string name="please_select_planner_type">Please select planner type</string>
+    <string name="please_select_recipient">Please select recipient</string>
+    <string name="please_enter_details">Please enter details</string>
+    <string name="please_select_time_spent">Please select time spent</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_time">Please select time</string>
+    <string name="log_activity_saved_successfully">Log activity saved successfully</string>
+    <string name="could_not_log_activity">Could not save the log activity</string>
+    <string name="task_accepted_successfully">Task accepted successfully</string>
+    <string name="task_rejected_successfully">Task rejected successfully</string>
+    <string name="task_accepted_closed_successfully">Task accepted and closed successfully</string>
+    <string name="task_closed">Task closed successfully</string>
+
+    <!-- New Task -->
+    <string name="select_reciepient">Select Recipient(if not me)*</string>
+    <string name="title_">Title</string>
+    <string name="title_compulsary">Title*</string>
+    <string name="task_title">Task Title*</string>
+    <string name="select_time">Select Time</string>
+    <string name="by_day_end">By Day End</string>
+    <string name="select_calender_time">Send Calendar Event</string>
+    <string name="new_task_saved_successfully">New task saved successfully</string>
+    <string name="could_not_save_new_task">Could not save the new task</string>
+
+    <!-- Buy Activity -->
+    <string name="hidefilter">Hide Filter</string>
+    <string name="showfilter">Show Filter</string>
+    <string name="showsearch">Show Search</string>
+    <string name="year">Year</string>
+    <string name="yearz">Year <sup><small>*</small></sup></string>
+    <string name="make">Make</string>
+    <string name="models">Model</string>
+    <string name="models_compulsary">Model*</string>
+    <string name="variant">Variant</string>
+    <string name="variantz">Variant <sup><small>*</small></sup></string>
+    <string name="selectall">-- Select / All --</string>
+    <string name="buy">Buy</string>
+    <string name="to">to</string>
+    <string name="defualt_date">1990</string>
+    <string name="sortby">Sort By</string>
+    <string name="none">-- None --</string>
+
+    <string name="photo_asc">Photos "(Ascending)"</string>
+    <string name="doyouwanttoplacebid">Do you want to bid on this vehicle with your bid amount?</string>
+    <string name="doyouwanttosetautobid">Do you want set auto bid ?</string>
+    <string name="entervalidamount">Enter valid amount</string>
+    <string name="increments">Min Bid Increment</string>
+    <string name="bestoffer">Best Offer So Far</string>
+    <string name="enableAutomatedBidding">Automated Bidding</string>
+    <string name="activate">Activate</string>
+    <string name="enter_valid_bid_limit">Enter valid bid limit</string>
+
+    <!-- Buy detail -->
+    <string name="placebid">Place Bid</string>
+    <string name="yourbid">Your Bid</string>
+    <string name="askingprice">Asking Price</string>
+    <string name="highest_bid_so_far">Highest Bid So Far</string>
+    <string name="minbid">Min Bid</string>
+    <string name="buynowprice">Buy Now Price</string>
+    <string name="bidnowcloses">Bid Closes On</string>
+    <string name="stockno">Stock Number:</string>
+    <string name="regno">Reg Number:</string>
+    <string name="vinno">VIN Number:</string>
+    <string name="action_fastscroll">Fast scroll</string>
+    <string name="action_addpadding">Add padding</string>
+    <string name="action_showShadow">Show shadow</string>
+    <string name="action_showHeaderAndFooter">Show Header &amp; Footer</string>
+    <string name="action_updateDataset">Update dataset</string>
+    <string name="setbidlimit">Please enter your bid amount limit</string>
+    <string name="amendmessage">Your bid limit set successfully</string>
+    <string name="placebidmessage">Your bid is successful</string>
+    <string name="highest_bider">You are already the highest bidder.</string>
+    <string name="disableautobidmessage">Your automated bidding is disable</string>
+    <string name="maximum_bid">Maximum Bid</string>
+    <string name="bid_limit">Bid Limit</string>
+
+    <!-- todo item -->
+    <string name="done">Done</string>
+    <string name="comment">Comments:</string>
+    <string name="comment_recommended">Comments (Recommended)</string>
+    <string name="reject">Reject</string>
+    <string name="no_can_do">No Can Do</string>
+    <string name="accept_close">Accept &amp; Close</string>
+    <string name="label">Label</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="send_info">Send Info</string>
+    <string name="send_ebrochure">Send eBrochure</string>
+    <string name="please_enter_comment">Please enter reason</string>
+    <string name="reject_task">Reject Task</string>
+    <string name="please_enter_your_reason">Please enter your reason</string>
+
+    <!-- Photos Extras item -->
+    <string name="photosnextras">Photos &amp; Extras</string>
+    <string name="stock_list">Stock List</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="keyword_search">Keyword Search</string>
+    <string name="retail">Retail</string>
+    <string name="excluded">Excluded</string>
+    <string name="invalid">Invalid</string>
+    <string name="all">All</string>
+    <string name="vehicles_updated_successfully">Vehicle updated successfully</string>
+    <string name="stock_updated_successfully_video_failed">Stock updated successfully but video/s upload failed,please try again</string>
+    <string name="vehicles_updated_successfully_video_failed">Vehicle updated successfully but could not upload video/s</string>
+    <string name="few_upload_failed">One of your selected video failed to upload.</string>
+
+    <!-- Load vehicle -->
+    <string name="select_from_vin_scan">Select from VIN Scans</string>
+    <string name="select_year">Select Year</string>
+    <string name="select_year_star">Select Year*</string>
+    <string name="default_year">1990</string>
+    <string name="select_make">Select Make</string>
+    <string name="select_model">Select Model</string>
+    <string name="select_varient">Select Variant</string>
+    <string name="select_varient_">Select Variant</string>
+
+    <string name="select_from_vin_scan1">Please select from VIN scans</string>
+    <string name="select_year1">Please select year</string>
+    <string name="select_year_star1">Please select year*</string>
+    <string name="select_make1">Please select make</string>
+    <string name="select_model1">Please select model</string>
+    <string name="select_varient1">Please select variant</string>
+    <string name="next">Next</string>
+    <string name="select_stock1">Please select stock</string>
+    <string name="clear">Clear</string>
+
+    <!-- VIN options -->
+    <string name="scan_vin">Scan VIN</string>
+    <string name="saved_vin_scan">Saved VIN Scans</string>
+
+    <!-- VIN lookups -->
+    <string name="vin_lookup">VIN Lookup</string>
+    <string name="stock_no">Stock No</string>
+    <string name="stock">Stock #</string>
+    <string name="stock_compulsory">Stock*</string>
+    <string name="stock_saved_successfully">Stock saved successfully</string>
+    <string name="stock_updated_successfully">Stock updated successfully</string>
+    <string name="stock_details_not_saved">Stock details not saved.Try after some time</string>
+    <string name="stock_star">Stock #*</string>
+    <string name="colour">Colour</string>
+    <string name="colour_star">Colour*</string>
+    <string name="License_no">License No</string>
+    <string name="reg_no">Reg No</string>
+    <string name="reg">Reg #</string>
+    <string name="engine_no">Engine No</string>
+    <string name="engine">Engine #</string>
+    <string name="license">License #</string>
+    <string name="lic">LIC</string>
+    <string name="vin_no">VIN No</string>
+    <string name="vin_no_compulsory">VIN No*</string>
+    <string name="color">Color</string>
+    <string name="vin">VIN #</string>
+    <string name="expires">Expires</string>
+    <string name="Licexpires">Lic Expiry</string>
+    <string name="geo_location">Geo Location</string>
+    <string name="update_vehicle">Update vehicle</string>
+    <string name="update">Update</string>
+    <string name="select_stock">Select Stock</string>
+    <string name="select_color">Select color</string>
+    <string name="select_color_star">Select color*</string>
+    <string name="select_license">Select License No.</string>
+    <string name="select_registration">Select Regs No</string>
+    <string name="select_engine_no">Select Engine No</string>
+    <string name="select_vin_no">Select VIN No</string>
+    <string name="discard">Discard</string>
+    <string name="save_later">Save For Later</string>
+    <string name="add_task">Add To Task</string>
+    <string name="add_to_stock">Add To Stock</string>
+    <string name="stolen">Stolen / Financed?</string>
+    <string name="has_accident">Has Accident/s?</string>
+    <string name="validate">Validate</string>
+    <string name="do_you_want_to_save_this_scan">Do you want to save this scan for later?</string>
+    <string name="discard_warning">Are you sure you want to discard?</string>
+    <string name="this_vehicle_already_in_stock_would_you_like_to_update_it">This vehicle is already in stock. Would you like to update it?</string>
+
+    <!-- variant Details -->
+    <string name="m_and_m">M&amp;M:</string>
+    <string name="m_and_m_code">M&amp;M Code*</string>
+    <string name="basic_info">Basic Info</string>
+    <string name="enter_milage">Mileage*</string>
+    <string name="enter_stock_no">Stock No*</string>
+    <string name="enter_price">Price Retail*</string>
+    <string name="enter_price_trade">Price Trade / NA</string>
+    <string name="price_trade">Price Trade</string>
+    <string name="trade">Trade R</string>
+    <string name="program_vehicle">Program vehicle</string>
+    <string name="enter_program_name">Program Name</string>
+    <string name="program">Program</string>
+    <string name="is_retail">Is retail</string>
+    <string name="is_tender">Is trade</string>
+    <string name="conditions">Condition (Recommended)</string>
+    <string name="condition">Condition</string>
+    <string name="condition_star">Condition*</string>
+    <string name="comments">Comments (Recommended)</string>
+    <string name="comments_only">Comments</string>
+    <string name="extras">Extras (Recommended)</string>
+    <string name="videos">Video/s</string>
+    <string name="images_com">Photo/s</string>
+    <string name="extra">Extras:</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="enter_oem_code">OEM Code</string>
+    <string name="enter_location">Location</string>
+    <string name="enter_trim">Trim</string>
+    <string name="enter_cost_r">Cost R</string>
+    <string name="cost">Cost</string>
+    <string name="enter_stand_r">Stand in R</string>
+    <string name="stand">Stand</string>
+    <string name="dont_let">Don\'t let the import override info</string>
+    <string name="ignore_settings">Force Active</string>
+    <string name="activate_cpa">Activate CPA error message</string>
+    <string name="remove_vehicle">Remove vehicle</string>
+    <string name="add_to_tender">Add To Tender</string>
+    <string name="tender">Tender</string>
+    <string name="internal_note">Internal Note</string>
+    <string name="notes">Notes</string>
+    <string name="video_info">Video/s in order of priority,Hold to move</string>
+    <string name="note">A vehicle is removed from Trade and Retail if it is added to a Tender.</string>
+    <string name="see_all">See All</string>
+    <string name="close">Close</string>
+    <string name="try_adjusting_filters">No results found. Try adjusting your filters.</string>
+    <string name="error_msg">Error in saving stock,try again. Value was either too large or too small.</string>
+
+    <!-- Special Module -->
+    <string name="create_special">+ Create Special</string>
+    <string name="create_special1">Create Special</string>
+    <string name="list_active_specials">Active Specials</string>
+    <string name="list_publish_specials">Specials Awaiting Publish</string>
+    <string name="list_expire_specials">Expired Specials</string>
+    <string name="select_type">Select Type</string>
+    <string name="select_type1">Please select Type</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="normal_price_r">R</string>
+    <string name="special_price">R</string>
+    <string name="description">Description*</string>
+    <string name="date_compulsary">Date*</string>
+    <string name="date">Date</string>
+    <string name="photos_in_order_hold_to_move">Image/s in order of priority. Hold to move.</string>
+    <string name="if_you_have_corrected_any_errors">If you have corrected any errors</string>
+    <string name="specials_excluded_msg">Specials for sold vehicles will be \n excluded from lists.</string>
+    <string name="available_to_trade">Available To Trade</string>
+    <string name="type_compulsary">Type*</string>
+    <string name="vehicle_compulsary">Vehicle*</string>
+    <string name="retail_compulsary">Retail R* </string>
+    <string name="special_compulsary">Special*</string>
+    <string name="year_compulsary">Year*</string>
+    <string name="make_compulsary">Make*</string>
+    <string name="model_compulsary">Model*</string>
+    <string name="variant_compulsary">Variant*</string>
+    <string name="please_select_type">Please select type</string>
+    <string name="please_select_vehicle">Please select vehicle</string>
+    <string name="please_select_make">Please select make</string>
+    <string name="please_select_model">Please select model</string>
+    <string name="please_select_variant">Please select variant</string>
+    <string name="please_select_region">Please select region</string>
+    <string name="please_enter_normal_price">Please enter retail price</string>
+    <string name="please_enter_special_price">Please enter special price</string>
+    <string name="please_enter_title">Please enter title</string>
+    <string name="please_enter_description">Please enter description</string>
+    <string name="please_select_start_date">Please select start date</string>
+    <string name="please_select_end_date">Please select end date</string>
+    <string name="special_created_successfully">Special created successfully</string>
+    <string name="special_updated_successfully">Special updated successfully</string>
+    <string name="special_deleted_successfully">Special deleted successfully</string>
+    <string name="special_publish_successfully">Special published successfully</string>
+    <string name="special_moved_to_expired_successfully">Special moved to expired successfully</string>
+    <string name="are_you_sure_you_want_to_move_this_special_to_expired">Are you sure you want to move this special to expired?</string>
+    <string name="are_you_sure_you_want_delete_this_special">Are you sure you want delete this special?</string>
+    <string name="publish_warning">Are you sure you want to publish this special?</string>
+    <string name="unable_to_publish">To publish this special it needs to be reviewed by a user other than the creator</string>
+
+    <!-- Sell module -->
+    <string-array name="sell_options">
+        <item>Action: Bidding Ended</item>
+        <item>Active Bids Received</item>
+        <item>Available To Trader</item>
+        <item>Not Available To Trader</item>
+    </string-array>
+
+    <string name="sell">Sell</string>
+
+    <!-- Active Bids Received -->
+    <string name="bids_received">Bids Received</string>
+    <string name="reject_bid">Reject Bid</string>
+    <string name="accept">Accept</string>
+    <string name="extend_bidding">Extend Bidding</string>
+    <string name="edit_vehicle_details">Edit Vehicle Details</string>
+
+    <!-- MyBids -->
+    <string-array name="my_bids_options">
+        <item>Losing Bids</item>
+        <item>Winning Bids</item>
+        <item>Won</item>
+        <item>Lost</item>
+    </string-array>
+
+    <!-- Tutorials -->
+    <string name="tap_here_to_view_main_menu">Tap here to view main menu</string>
+    <string name="tap_here_to_exit">Tap anywhere to exit help</string>
+    <string name="scan_vehicle_barcode_by_tapping_here">Tap here to scan vehicle barcode</string>
+    <string name="press_here_to_add_vehicle_to_stock">Select make, model and variant then tap here to add vehicle into stock</string>
+    <string name="scroll_up_and_down">Scroll to view more listing</string>
+    <string name="to_view_large_image_tap_on_the_image">Tap here to view large image</string>
+    <string name="tap_here_to_search_vehicle">Tap here to search vehicles</string>
+    <string name="tap_here_to_create_specials">Tap here to create specials</string>
+    <string name="tap_here_to_create_new_post">Tap here to create new post</string>
+    <string name="tap_here_to_search_post">Tap here to search posts</string>
+    <string name="swipe_to_see_more_images">Swipe to see more images</string>
+    <string name="tap_here_to_select_sort_attribute">Sort vehicle by tapping here</string>
+    <string name="submit_vehicle_information_by_scrolling_up_and_down">Submit vehicle information by scrolling up and down side</string>
+    <string name="create_special_by_selecting">Create special by selecting special type, vehicle etc.</string>
+    <string name="update_special_by_selecting">Update special by selecting special type, vehicle etc.</string>
+    <string name="filter">Filter</string>
+    <string name="client_compulsary">Client*</string>
+    <string name="user">User</string>
+    <string name="type1">Type</string>
+    <string name="select_Client_">Select Client</string>
+
+    <!-- New constants -->
+    <string name="no_information">Basic Info?</string>
+    <string name="no_variant">No variant available to select</string>
+    <string name="no_make">No make available to select</string>
+    <string name="no_model">No model available to select</string>
+    <string name="no_stock">No stock available to select</string>
+    <string name="no_tender">No tender available </string>
+    <string name="no_type">No type available to select</string>
+    <string name="no_color">Please enter colour</string>
+    <string name="no_milage">Please enter mileage</string>
+    <string name="no_stock_number">Please enter stock number</string>
+    <string name="no_retail_price">Please enter retail price</string>
+
+    <!-- Wanted section -->
+    <string name="region">Region*</string>
+    <string name="add_to_wanted_list">Add to Wanted List</string>
+    <string name="wanted">Wanted</string>
+    <string name="select">Select</string>
+    <string name="underlined_search"><u>Search</u></string>
+    <string name="underlined_delete"><u>Delete</u></string>
+    <string name="underlined_searchall"><u>Search All</u></string>
+    <string name="wanted_added_successfully">Wanted added successfully</string>
+    <string name="wanted_deleted_successfully">Wanted deleted successfully</string>
+    <string name="error_while_adding_wanted">Error while adding wanted please try later</string>
+    <string name="error_while_deleting_wanted">Error while deleting wanted please try later</string>
+    <string name="please_select_year_properly">Please select year properly</string>
+
+    <!-- Available To Trade -->
+    <string name="type_colon">Type:</string>
+    <string name="stock_code">Stock Code:</string>
+    <string name="offer_amount">Offer Amount:</string>
+    <string name="offer_date">Offer Date:</string>
+    <string name="offer_start">Offer Start:</string>
+    <string name="offer_end">Offer End:</string>
+    <string name="offer_id">Offer ID:</string>
+    <string name="offer_status">Offer Status:</string>
+    <string name="source">Source:</string>
+    <string name="are_you_sure_you_want_to_delete_this_vehicle">Are you sure you want to delete this vehicle?</string>
+    <string name="please_select_min_year">Please select start year</string>
+    <string name="please_select_max_year">Please select end year</string>
+
+    <!-- multiple image -->
+    <string name="tap_to_add_caption">Tap to add caption</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_pick">Pick From Gallery</string>
+    <string name="btn_pick_mul">Pick From Gallery (Multiple)</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+
+    <!-- crop menu -->
+    <string name="rotate">Rotate</string>
+    <string name="crop">Crop</string>
+
+    <!-- new added on 10-03-2015 -->
+    <string name="blog_updated_successfully">Blog updated successfully.</string>
+    <string name="blog_saved_successfully">Blog saved successfully</string>
+    <string name="please_select_blog_type">Please select blog type</string>
+    <string name="this_blog_is_not_active">This post is not active are you sure you want to save?</string>
+    <string name="please_enter_blog_details">Please enter blog details</string>
+    <string name="please_select_active_date">Please select active date</string>
+    <string name="blog_not_saved_please_try">Blog not saved,try after some time</string>
+
+    <!-- Scan License -->
+    <string name="scan_driver_license">Scan a Driver License</string>
+
+    <!-- time ago strings -->
+    <string name="just_now">just now</string>
+    <string name="time_ago">%s ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="change_status">Change status</string>
+    <string name="submit">Submit</string>
+    <string name="lead_hint">Name, Surname &amp; Lead ID</string>
+
+    <!-- Leads -->
+    <string name="leads_updated_successfully">Leads updated successfully</string>
+    <string name="leads_details">Leads Details</string>
+    <string name="please_select_activity">Please select an activity</string>
+
+    <!-- Scan VIN audit -->
+
+    <string name="stock_audit">Stock Audit</string>
+    <string name="audited_today">Audited Today</string>
+    <string name="still_to_audit">Still to Audit</string>
+    <string name="audit_history">Audit History</string>
+    <string name="email_list">Email List</string>
+    <string name="str_email_address">Email Address</string>
+    <string name="audited_today_no_matching">Audited today but no matching VIN</string>
+    <string name="audit_date_select">Select Audit Date</string>
+    <string name="vehicle_requre_vin_scan">These vehicles requires a VIN scan.</string>
+    <string name="audited_today_no_matching_note">If you add the VIN number to the Stock Manager then the audit list will automatically update.</string>
+    <string name="scan_vin_note">Scan VIN to add vehicle to audit. Geo location and user will be recorded.</string>
+    <string name="picture_note">Note: Two images need to be added to the vehicle audit - \n 1. Front of the vehicle \n 2. Vehicle\'s license disc</string>
+    <string name="video_note"> Note:\nOnly two videos can be added per vehicle per an upload.\nMax. length of 2:00 minutes per video.\nWe suggest 1 x exterior and 1 x interior.</string>
+    <string name="video_note_"> Note:\nOnly two videos can be added per vehicle per an upload.\nMax. length of 2:00 minutes per video.</string>
+    <!-- StOCK list -->
+    <string name="my_stock">My Stock</string>
+    <string name="group_stock">Group Stock</string>
+    <string name="type_stock">Type:</string>
+    <string name="comments_stock">Comments:</string>
+    <string name="extras_stock">Extras:</string>
+    <string name="send_photos">Send Vehicle Photos</string>
+    <string name="send_videos">Send Vehicle Videos</string>
+    <string name="send_photos_per">Send Personalised Photo/s</string>
+    <string name="send_video_per">Send Personalised Video/s</string>
+    <string name="max_video_note">Note : Max. length of 2:00 minutes.</string>
+    <string name="see_more_info">See More Info</string>
+    <string name="email_stock">Email</string>
+    <string name="comment_stock">Comment</string>
+    <string name="send_stock">Send</string>
+    <string name="message">Message</string>
+
+    <!-- Video Details -->
+    <string name="video_title">Title:</string>
+    <string name="video_desc">Description:</string>
+    <string name="video_tags">Tags:</string>
+    <string name="video_isSearchable">Searchable on YouTube</string>
+    <string name="add_to_vehicle">Add to vehicle</string>
+    <string name="save_info">Save Info</string>
+
+    <!-- Summery -->
+    <string name="text_with_bullet">\u2022</string>
+    <string name="required_z"><sup><small>*</small></sup> Required</string>
+    <string name="optional"><sup><small>*</small></sup>Optional</string>
+    <string name="costs_apply"><sup><small>**</small></sup> Costs may apply</string>
+    <string name="save_and_send">Save &amp; Send</string>
+    <string name="scan_vin_note_summary">The vehicle has no VIN number. Please scan the VIN to proceed.</string>
+
+    <!--Vehicle lookup-->
+    <string name="kilometers_warning">Please enter kilometers</string>
+    <string name="condition_warning">Please select condition</string>
+    <string name="vin_warning">Please enter VIN No.</string>
+
+    <!-- OEM Specs -->
+    <string name="engine_and_gearbox">Engine &amp; Gearbox</string>
+    <string name="suspensions_and_drivetrain">Suspensions &amp; Drivetrain</string>
+    <string name="safety_and_security">Safety &amp; Security</string>
+    <string name="engineanddrivetrain">Engine &amp; Drivetrain</string>
+
+    <!-- Verify VIN -->
+    <string name="Model_and_Variant">Model &amp; Variant</string>
+    <string name="update_prive"><u>Update</u></string>
+    <string name="fetch_price"><u>Fetch TUA pricing</u></string>
+
+    <!-- Leadpool -->
+    <string name="three"><u>3</u></string>
+    <string name="zero"><u>0</u></string>
+
+
+    <string name="client_name">Search Client</string>
+    <string name="no_results">No record(s) found.</string>
+    <string name="search_impersonate">Select Client</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_menu">Select Menu</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Log in</b></string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="authenticating">Authenticating&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="forgot_login_details">Forgot your login details?</string>
+    <string name="join_now">Help</string>
+    <string name="please_contacts"><html>Please contact <small>support@ix.co.za</small></html></string>
+    <string name="contact_phone"><html>or Phone <small>0861 292 999</small></html></string>
+    <string name="support_email_id">support@ix.co.za</string>
+    <string name="support_phone_no">0861 292 999</string>
+    <string name="please_contact_on">Please contact us on</string>
+
+
+    <string name="Prospect">Prospect</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="Enquired_on">Enquired On</string>
+    <string name="Timing">Timing</string>
+    <string name="Source">Source</string>
+    <string name="Date">Date</string>
+    <string name="Last_Update">Last Update</string>
+    <string name="Update_Now">Update Now</string>
+    <string name="Activity">Activity*</string>
+    <string name="Change_Status">Change Status</string>
+    <string name="Trade_in_details">Trade-In Details</string>
+    <string name="Current_Vehicle">Current Vehicle</string>
+    <string name="Year_Model">Year Model</string>
+    <string name="Mileage">Mileage</string>
+
+    <!-- Vehicle extra-->
+    <string name="are_you_sure_you_want_delete">Are you sure you want delete ?</string>
+
+    <!--Interior Reconditioning-->
+    <string name="enter_value">Please enter price</string>
+    <string name="enter_name">Please enter name field</string>
+
+    <!-- Network Checking Alert -->
+    <string name="network_title">You are on a mobile data network.\n Do you want to:</string>
+    <string name="Upload_Now">Upload Now</string>
+    <string name="upload_with_wifi">Upload with Wifi</string>
+
+    <!-- My Forward appraisal -->
+    <string name="seller_note">The following dealers, groups and OEMs have given me access to see, buy or bid on their trade vehicles</string>
+    <string name="email_pdf_to">Email PDF to</string>
+    <string name="separate_multiples_with_commas">Separate multiples with semicolon (;)</string>
+    
+    <!-- ReconItemArea -->
+    <string name="selection_note_repair_replace">Please select an option above: Either - Repair or Replace</string>
+    <string name="error_while_deleting_Exteriorcondition_data">Error while deleting Exterior Reconditioning</string>
+    <string name="error_while_saving_Exteriorcondition_data">Error while saving Exterior Reconditioning</string>
+    <string name="are_you_sure_you_want_to_delete_this_exterior">Are you sure you want to delete this exterior?</string>
+    <string name="error_while_saving_images">Error while saving Images</string>
+    <string name="list">List</string>
+    <string name="price_ascending">Price (Ascending)</string>
+    <string name="select_image_from_device_folders">Please select image</string>
+    <string name="upload_image">Select profile photo</string>
+    <string name="failed_please_pick_image">Please pick image</string>
+    <string name="please_select_image_source">Please select the image source</string>
+    <string name="camera">Select from Camera</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="replace_photo_profile">Replace Profile Photo</string>
+    <string name="customise_broucher">Personalise your eBrochure with a profile photo.</string>
+    <string name="upload_profile_picture">Upload Profile Photo</string>
+    <string name="stock_summary">Stock Summary</string>
+    <string name="last_stock_import">Last Stock Import</string>
+    <string name="last_manual_update">Last Manual Update</string>
+    <string name="used">Used</string>
+    <string name="vehicle">Veh\'s</string>
+    <string name="pics">Pics</string>
+    <string name="vid">Videos</string>
+    <string name="manual">Man*</string>
+    <string name="active">Active</string>
+    <string name="total">Total</string>
+    <string name="ignore_stock_import">Man*= Ignores Stock Import</string>
+    <string name="active_stock_feed">Active Stock Feeds</string>
+    <string name="auto_trader">Auto Trader</string>
+    <string name="cars_co_za">Cars.co.za</string>
+    <string name="cars_finder">Carfind</string>
+    <string name="email_these_stock_lists">Email these stock lists</string>
+    <string name="used_vehicles">Used Vehicles-</string>
+    <string name="new_vehicles">New Vehicles-</string>
+    <string name="tocaps">to</string>
+    <string name="emailaddress">Email Address/es (semicolon separated)</string>
+    <string name="sendemail">Send Email</string>
+    <string name="please_enter_valid_email">Please enter valid email address.</string>
+    <string name="please_enter_atleast_one_email">Please enter atleast one email address.</string>
+    <string name="please_select_one_option">Please select at least one option.</string>
+    <string name="failure_message">Failure Stock list not sent. Please try again.</string>
+    <string name="success_message">Stock List sent successfully.</string>
+    <string name="image_updated_successfully">Image uploaded successfully.</string>
+    <string name="do_want_to_subscribe_for_notification_services">Do you want to subscribe to notification services?</string>
+    <string name="team">Team</string>
+    <string name="select_team">Select Request Type</string>
+    <string name="support_request">Support Request</string>
+    <string name="request">Request</string>
+    <string name="attach_images">Attach Image/s</string>
+    <string name="attachment_list">Attachment Types: jpeg, png, pdf, docx, doc, csv, txt.</string>
+    <string name="request_type">Request Type</string>
+    <string name="request_title">Request Title</string>
+    <string name="request_details">Request Details</string>
+    <string name="select_request_type">Select Request Type.</string>
+    <string name="please_enter_request_title">Please enter the Request Title.</string>
+    <string name="please_enter_request_description">Please enter the Request Details.</string>
+    <string name="please_select_request">Please select the Request Type.</string>
+
+</resources>

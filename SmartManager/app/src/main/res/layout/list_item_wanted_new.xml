@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/back"
+        android:layout_width="@dimen/swipe_list_height"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:tag="back" >
+
+        <IconTextView
+            android:id="@+id/tvDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="{fa-remove}"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:tag="front"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvYearVehicleName"
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvRegion"
+                style="@style/WhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvSearch"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+</FrameLayout>

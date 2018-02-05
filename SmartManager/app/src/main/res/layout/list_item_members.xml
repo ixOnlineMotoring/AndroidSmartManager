@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvMemberName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="Members"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:orientation="horizontal" >
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTradebuy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Trade\nbuy"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTradesell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Trade\nsell"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTenderAccept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Tender\nAccept"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTenderDecline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Tender\nDecline"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTenderMgr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Tender\nMgr"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <com.nw.widget.CustomTextView
+                android:id="@+id/tvTenderAuditor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Tender\nAuditor"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.nw.widget.CustomTextView
+            android:id="@+id/tvEdit"
+            style="@style/GreyTextStyleSmallText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="Edit" />
+    </LinearLayout>
+
+</LinearLayout>
