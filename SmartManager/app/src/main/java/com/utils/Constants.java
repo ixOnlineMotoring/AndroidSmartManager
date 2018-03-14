@@ -48,7 +48,8 @@ public class Constants
 	public static final String IMAGE_BASE_URL="http://netwin.ix.co.za/";
 	public static  String LEADS_WEBSERVICE_URL="http://leadservicenew.ix.co.za/LeadService.svc?wsdl";
 	public static String LICENSE_WEBSERVICE_URL = "http://licensesvc.ix.co.za/License.svc?wsdl";
-	public static  String EBROCHURE_WEBSERVICE_URL="http://ebrochure.ix.co.za/electronicbrochuregeneratorservice.svc?wsdl";
+	//public static  String EBROCHURE_WEBSERVICE_URL="http://ebrochure.ix.co.za/electronicbrochuregeneratorservice.svc?wsdl";
+    public static  String EBROCHURE_WEBSERVICE_URL="http://ashveebee.qa.ix.co.za/electronicbrochuregeneratorservice.svc?wsdl";
 	public static String SPECIAL_WEBSERVICE_URL = "http://specialsservice.ix.co.za/SpecialsService.svc?singleWsdl";
 	public static final String TRADER_NAMESPACE="Http://TradeService.ix.co.z\na";
 	public static final String VIDEO_WEBSERVICE="http://uploadservice.ix.co.za/api/Video";
